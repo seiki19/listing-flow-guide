@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ヤフオクとeBay、出品準備はどこで確認する？</title><style>body{margin:0;background:#f4f5f2;color:#18302d;font-family:system-ui,"Yu Gothic",sans-serif;line-height:1.9}main{max-width:780px;margin:auto;padding:48px 24px 80px}header{padding:30px 0;border-bottom:3px solid #267567}h1{font-size:clamp(24px,4vw,36px);line-height:1.6}h2{font-size:24px;margin-top:52px;border-left:5px solid #267567;padding-left:16px}.eyebrow{color:#267567;font-weight:700}.card,.checklist{background:white;border:1px solid #d3e1da;border-radius:12px;padding:22px;margin:24px 0;overflow-wrap:anywhere}p{overflow-wrap:anywhere}@media print{body{background:white;font-size:10pt}main{max-width:none;padding:0}h1{font-size:22pt}h2{break-after:avoid;margin-top:24px;font-size:15pt}.card,.checklist{break-inside:avoid}p{orphans:3;widows:3}@page{size:A4;margin:17mm}}</style></head><body><main><header><p class="eyebrow">出品キット 補足資料</p><h1>ヤフオクとeBay、出品準備はどこで確認する？<br>CSV・写真ZIPから進めるヤフオクと、下見・下書き・公開を分けるeBay</h1></header>
+<p>「出品データを作れたら、もう出品できている？」<br>ここは、販路ごとに分けて考えると整理しやすくなります。</p>
+<p>ヤフオクは、パソコンでCSVと写真をまとめ、オークタウンへ取り込んで確認します。<br>eBayは、パソコンで内容を確認する段階、APIで未公開データを保存する段階、本番公開する段階を分けます。</p>
+<p>この補足資料では、Brainに同梱する出品キットの流れを説明します。eBayは、新規の未公開商品を出品する場合が対象です。すでに公開している商品の更新とは分けて扱ってください。</p>
+<h2>1｜まず、確認する場所を比べてみる</h2>
+<div class="card">【ヤフオク】<br>用意するもの：商品情報、検品内容、商品別の写真、現行のオークタウン用テンプレート。<br>パソコンにできるもの：出品用CSVと写真を格納したZIP。<br>次に確認する場所：オークタウンの取込結果。<br>公開前に見るもの：タイトル、価格、商品状態、説明、写真、カテゴリ、送料など。<br>公開後に見るもの：実際のヤフオクの商品ページ。</div>
+<div class="card">【eBay】<br>用意するもの：商品情報、英語の検品情報、商品別の写真、出品先・配送・返品などの設定。<br>パソコンにできるもの：出品データと確認レポート。<br>次に確認する場所：APIで取得した情報・保存結果と、ローカルのレポート。<br>公開前に見るもの：未公開データ、画像URL、価格・数量・状態、必須項目、配送・返品などの設定。<br>公開後に見るもの：実際のeBayの商品ページ。</div>
+<p>ファイルができたこと、外部サービスに保存されたこと、購入者に見える状態になったことは、それぞれ別の確認です。</p>
+<p>確認方法：今手元にあるのが「ファイル」「未公開データ」「公開ページ」のどれかを区別します。<br>次にやること：使う販路の流れを、以下で確認してください。</p>
+<h2>2｜ヤフオク：CSVと写真を用意し、オークタウンで確認する</h2>
+<p>① 商品情報と写真をそろえる<br>商品番号をそろえ、写真と商品が取り違えられていないか確認します。状態の説明は実物の検品結果をもとに用意します。</p>
+<p>② パソコンでCSVと写真ZIPを作る<br>同梱キットでは、出品用CSVと写真を同じZIPにまとめます。実商品の出力には、自分のオークタウンから取得した現行テンプレートを使います。</p>
+<p>③ ローカルの出力を確認する<br>タイトル、価格、状態、説明、カテゴリ、送料、写真の対応を照合します。まず1商品で確認してから、対象を増やします。</p>
+<p>④ オークタウンへ取り込む<br>本人がZIPをアップロードし、取込結果とエラーを確認します。CSVやZIPが作れた段階では、まだヤフオクへの出品完了ではありません。</p>
+<p>⑤ 内容を確認して出品する<br>本人が出品操作を行い、公開後の商品ページでも内容を確認します。</p>
+<p>同梱キットが担当するのは、ローカルで出品ファイルを作るところまでです。オークタウンへのアップロードと出品は本人が行います。ZIPの容量条件は、自分の契約と現在の案内を確認してください。</p>
+<p>確認方法：ZIPの生成、オークタウンの取込、公開ページの確認を別々に記録します。<br>次にやること：商品情報と写真の対応を、1商品で確認してください。</p>
+<h2>3｜eBay：下見・API下書き・本番公開を分ける</h2>
+<p>① オフライン練習<br>サンプル1商品で、パソコン内に出品データとレポートを作ります。この段階ではeBayへ通信せず、eBay上の下書きも作りません。</p>
+<p>② 実商品の下見<br>認証や設定を準備したうえで、実商品のデータを確認します。キットの「下見」には、eBay APIからアカウントや設定を読み取る処理が含まれます。「パソコンで確認する＝必ず無通信」ではありません。</p>
+<p>③ 写真の送信<br>必要な写真をAPIへ送り、出品に使う画像URLを取得します。写真の送信は外部への保存です。ただし、画像を送っただけでは商品は公開されません。</p>
+<p>④ APIへの下書き保存<br>確認した実商品について、API上へ商品データ（Inventory Item）と販売条件（未公開Offer）を保存します。ここでいう「下書き」はAPI上の未公開データです。Seller Hubの画面上の下書きと同じ場所・表示になる、という意味ではありません。</p>
+<p>⑤ 公開前確認<br>API上の内容と手元のデータを照合します。下書き保存が通っても、公開に必要な条件をすべて満たしたとは限りません。カテゴリの必須項目、画像、価格、数量、商品状態、配送・返品などを確認します。</p>
+<p>⑥ 本番公開<br>本人の承認後、公開操作を行います。未公開Offerを公開する操作がpublishOfferです。成功結果と実際の商品ページを確認して、公開できたことを判断します。</p>
+<p>このキットのAPI接続先は本番環境です。オフラインのサンプル練習と、実アカウントへの保存を混同しないでください。一括下書きの処理には公開を含めず、公開は1商品ずつ扱います。</p>
+<p>確認方法：「ローカル確認済み」「写真送信済み」「API下書き保存済み」「公開前確認済み」「公開済み」を分けて確認します。<br>次にやること：まずオフラインのサンプル1商品から始めてください。</p>
+<h2>4｜Claude Code・Codexには、どこまで頼む？</h2>
+<p>キットを展開し、START-HERE.mdがあるフォルダ全体を、使うアプリで開きます。最初は次のように依頼してください。</p>
+<div class="card">【ヤフオクの依頼例】<br>「START-HERE.mdとヤフオク用の同梱スキル、yahoo/README.mdを読んでください。サンプル1商品でCSVと写真ZIPを作り、商品番号と写真の対応を確認してください。出力先と確認結果を教えてください。外部アップロードや公開はしません。」</div>
+<div class="card">【eBayの依頼例】<br>「START-HERE.mdとeBay用の同梱スキル、ebay/README.mdを読んでください。サンプル1商品をオフラインで確認し、出力先と確認結果を教えてください。API接続、画像送信、下書き保存、公開には進みません。」</div>
+<p>AIから返ってきたら、生成ファイルの場所と確認結果を見ます。「できました」という返答だけで次へ進めず、エラーや未確認項目があれば先に解消してください。</p>
+<p>実商品へ進むときは、対象の商品番号と、今回どの段階まで進めるかを明示します。状態不明の箇所をAIに推測させず、検品結果を追加してください。</p>
+<p>アカウント登録・認証と最終確認は本人が行います。eBayの認可コード入力は本人のローカル端末で行い、パスワード・APIキー・トークンをAIのチャットに貼りません。必要なPython・Node.jsなどの準備は、同梱READMEに沿って確認します。</p>
+<p>確認方法：AIの返答に、対象商品・実行した段階・出力先・エラーの有無が書かれているか確認します。<br>次にやること：使う販路の依頼例を、サンプル練習に使ってください。</p>
+<h2>5｜実商品へ進む前のチェック</h2>
+<div class="checklist">□ 商品番号と写真が一致している。<br>□ 商品状態は実物を確認した内容になっている。<br>□ タイトル・説明・価格・数量・カテゴリに誤りがない。<br>□ 配送・送料・返品などは、自分の取引条件になっている。<br>□ サンプルの架空商品・画像・設定を実送信しない。<br>□ 今回進める段階と、本人が確認する場所を決めている。<br>□ エラーや結果不明の処理は、外部側の状態を確認してから扱う。<br>□ 公開後は、実際の商品ページでも確認する。</div>
+<p>ヤフオクは「ファイル作成→オークタウンで確認→出品」。<br>eBayは「オフライン練習→実商品の下見→写真送信→API下書き→公開前確認→本番公開」。<br>今どこまで進んだかが分かれば、次に何を確認するかも決めやすくなります。</p>
+<p>確認方法：自分の作業段階に必要な項目をチェックします。<br>次にやること：未確認の項目を確認し、実商品も1商品から進めてください。</p>
+<h2>今回のBrainについて</h2>
+<p>10月10日にオプチャで先行販売するBrainには、ヤフオク・eBayの両販路の出品キットと、Claude Code・Codexから使うための手順を同梱します。</p>
+
+
+<p>eBayの公式説明<br>Managing offers：<a href="https://www.developer.ebay.com/api-docs/sell/static/inventory/managing-offers.html">https://www.developer.ebay.com/api-docs/sell/static/inventory/managing-offers.html</a><br>Publishing offers：<a href="https://www.developer.ebay.com/api-docs/sell/static/inventory/publishing-offers.html">https://www.developer.ebay.com/api-docs/sell/static/inventory/publishing-offers.html</a></p></main></body></html>
+
+
+
