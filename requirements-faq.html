@@ -1,0 +1,98 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>購入前のPC環境・アカウント・費用FAQ</title><style>body{margin:0;background:#f5f6f2;color:#203735;font-family:system-ui,"Yu Gothic",sans-serif;line-height:1.85}main{max-width:900px;margin:auto;padding:48px 24px 80px}h1{font-size:clamp(26px,4vw,38px);line-height:1.5;border-bottom:3px solid #337b71;padding-bottom:25px}h2{margin-top:48px;font-size:25px;border-left:5px solid #337b71;padding-left:15px}h3{font-size:19px;margin-top:30px}p{overflow-wrap:anywhere}a{color:#176b8a}.table-wrap{overflow-x:auto;margin:24px 0}table{border-collapse:collapse;width:100%;background:white;font-size:15px}th,td{border:1px solid #d1dfda;padding:14px;text-align:left;vertical-align:top;min-width:140px}th{background:#e6eee8}.check{background:white;padding:8px 14px;margin:5px 0}@media print{body{background:white;font-size:10pt}main{padding:0}h1{font-size:22pt}h2{font-size:15pt;break-after:avoid;margin-top:25px}h3{break-after:avoid}table{font-size:9pt}th,td{min-width:0;padding:8px}tr{break-inside:avoid}.table-wrap{overflow:visible}@page{size:A4;margin:15mm}}</style></head><body><main><h1>購入前に確認したい、PC環境・アカウント・別途費用</h1>
+<p>Claude Code・Codexで使う出品キットのFAQ</p>
+<p>自分のパソコンで使えるか。どのアカウントが必要か。記事代のほかに費用がかかるか。</p>
+<p>購入前に確認しておきたい点をまとめました。利用する販路とAIアプリを決めて、必要な準備を確認してください。</p>
+<h2>1｜PCとキットの実行環境</h2>
+<div class="table-wrap"><table>
+<tr><th>確認するもの</th><th>ヤフオク用</th><th>eBay用</th></tr>
+<tr><td>作業する端末</td><td>ローカルでファイルを扱えるPC</td><td>ローカルでファイルを扱えるPC</td></tr>
+<tr><td>キットの実行に必要なもの</td><td>Python 3.11以上と指定ライブラリ</td><td>Node.js 20以上と指定ライブラリ</td></tr>
+<tr><td>主な入力</td><td>商品情報の.xlsx、設定、商品別写真</td><td>商品ごとのJSON、設定、商品別写真</td></tr>
+<tr><td>最初に試すこと</td><td>サンプル1商品のCSV・写真ZIP生成</td><td>サンプル1商品のオフライン生成</td></tr>
+<tr><td>外部への接続</td><td>オークタウンへの取込・出品は本人が操作</td><td>認証・接続確認・画像送信・下書き保存・公開を段階ごとに実施</td></tr>
+</table></div>
+<p>Python・Node.jsのバージョンは、このキットの実行条件です。Claude Code・Codex自体の対応OSやアプリの起動条件とは別に確認してください。インストールや設定変更が制限されたPCでは、必要な準備ができるか先に確認します。</p>
+<p>このキットにはWindowsとMac向けの手順があります。OSのバージョンとCPUが、選んだAIアプリの公式要件に合うかも確認してください。CodexデスクトップのMac用ダウンロードは、確認日時点でApple Silicon向けの案内です。Macではコマンドやパスの書き方が一部異なるため、READMEのMac用手順に沿って進めます。Macの手順があることと、Mac実機で動作確認済みであることは別です。</p>
+<p>確認方法：使う販路の実行環境と、使うAIアプリの対応環境をそれぞれ確認します。</p>
+<p>次にやること：自分のPCのOSと、ソフトをインストールできるかを確認してください。</p>
+<h2>2｜Claude Code・Codexのどちらから始める？</h2>
+<p>両方の入口を用意しています。キットを新しいフォルダに展開し、START-HERE.mdがあるフォルダ全体を、使うアプリで開きます。</p>
+<div class="table-wrap"><table>
+<tr><th>アプリ</th><th>ヤフオクの入口</th><th>eBayの入口</th></tr>
+<tr><td>Claude Code</td><td>/yahoo-batch-listing</td><td>/ebay-batch-listing</td></tr>
+<tr><td>Codex</td><td>$yahoo-batch-listing</td><td>$ebay-batch-listing</td></tr>
+</table></div>
+<p>候補が出ない場合も、START-HERE.mdと同梱スキルを読ませる方法を案内しています。販路ごとのフォルダだけを開くのではなく、キット全体のフォルダを開いてください。</p>
+<p>Codexでの通し確認は、僕の環境で実施しています。ただし、別のPCや別のアカウント設定で同じ結果になることを保証するものではありません。実アカウントでの本番公開まで確認済み、という意味ではありません。</p>
+<p>確認方法：選んだアプリでキットのフォルダを開き、START-HERE.mdを読めるか確認します。</p>
+<p>次にやること：使い慣れた方を選び、サンプル1商品から始めてください。</p>
+<h2>3｜必要なアカウント</h2>
+<div class="table-wrap"><table>
+<tr><th>用途</th><th>必要な準備</th><th>購入前の確認点</th></tr>
+<tr><td>AIアプリ</td><td>選んだClaude CodeまたはCodexを利用できるアカウント・利用条件</td><td>自分のプランで使えるか、利用量の上限や追加費用</td></tr>
+<tr><td>ヤフオクへの出品</td><td>出品できる状態のYahoo! JAPANアカウント</td><td>自分の出品設定と利用条件</td></tr>
+<tr><td>ヤフオク用データの取込</td><td>オークタウンを利用できる状態</td><td>現行テンプレートと自分の契約・容量条件</td></tr>
+<tr><td>eBayへの出品</td><td>出品できる状態のeBayアカウント</td><td>出品先、配送・返品などの設定と出品制限</td></tr>
+<tr><td>eBay API接続</td><td>eBay Developers Programアカウント、Developer Portalでのアプリ情報の準備と本人認証</td><td>API接続に必要な設定を本人が用意できるか</td></tr>
+</table></div>
+<p>最初のローカル練習と、実アカウントへの接続は分けます。サンプルが動いても、出品アカウントの設定や認証が終わったことにはなりません。</p>
+<p>確認方法：使う販路のアカウントと設定を、自分で確認できる状態にします。</p>
+<p>次にやること：未登録・未設定の項目を整理してください。</p>
+<h2>4｜記事代とは別に確認する費用</h2>
+<div class="table-wrap"><table>
+<tr><th>項目</th><th>確認すること</th></tr>
+<tr><td>Claude Code・CodexなどのAI利用</td><td>選ぶプラン、利用量上限、追加クレジット・API利用料の有無</td></tr>
+<tr><td>表計算ソフト</td><td>.xlsxを編集するために新たな契約が必要か</td></tr>
+<tr><td>オークタウンなどの出品サービス</td><td>無料プランで足りるか、有料プランを選ぶ場合の料金</td></tr>
+<tr><td>ヤフオク・eBayでの販売</td><td>出品・販売に伴う手数料、送料、選択した有料機能</td></tr>
+<tr><td>PC・通信環境</td><td>必要なPCやインターネット環境をすでに用意できているか</td></tr>
+</table></div>
+<p>これらの費用がBrainの記事代に含まれる、という案内ではありません。料金は選ぶサービス、プラン、利用量などで変わるため、契約前に各公式の最新案内を確認してください。具体的な金額や無料枠を、この資料では固定していません。</p>
+<p>確認方法：記事代と、使う外部サービスの費用を分けて確認します。</p>
+<p>次にやること：今の契約で使えるものと、追加契約が必要なものを整理してください。</p>
+<h2>5｜よくある質問</h2>
+<h3>Q. Claude CodeとCodexの両方を契約する必要がありますか？</h3>
+<p>A. 両方を使うことが前提のキットではありません。使う方を選び、そのアプリを利用できるアカウントと条件を確認してください。両方を使う場合も、同時に同じ出力ファイルを書き換えないようにします。</p>
+<h3>Q. スマホだけで使えますか？</h3>
+<p>A. このキットは、自分のPCでフォルダを開き、PythonやNode.jsの処理を動かす構成です。スマホだけで一連の作業を行う手順は用意していません。</p>
+<h3>Q. Macでも使えますか？</h3>
+<p>A. Mac向けの準備・操作手順があります。ただし、Mac実機での確認は別です。手順の用意だけで、自分のMacでの動作確認まで済んだとは判断しないでください。</p>
+<h3>Q. Excelの契約は必須ですか？</h3>
+<p>A. ヤフオク用は商品情報の.xlsxファイルを読み込みます。キットの処理にはPythonと指定ライブラリを使いますが、入力ファイルを正しく編集・保存する環境は別途必要です。Microsoft Excel以外を使う場合の互換性を一律に保証していません。列名、商品番号の先頭ゼロ、保存形式を確認してください。eBay用の直接入力はJSONで、Excelを直接一括読込する機能ではありません。</p>
+<h3>Q. プログラミング初心者でも進められますか？</h3>
+<p>A. AIへの日本語の依頼例と、サンプルから始める手順があります。一方で、ソフトの導入、フォルダの選択、商品情報の入力、結果確認は必要です。操作をすべて省略できる教材ではないため、まず必要な準備を確認してください。</p>
+<h3>Q. eBayの認証もAIに任せられますか？</h3>
+<p>A. アカウントへのログイン・同意や、初回の認可コード入力は本人が行います。認可コードは本人のローカル端末へ入力し、APIキー・トークン・パスワードをAIのチャットに貼りません。</p>
+<h3>Q. 購入すれば、あとは全自動で公開されますか？</h3>
+<p>A. ヤフオク用はCSVと写真ZIPを作り、本人がオークタウンへ取り込んで出品します。eBay用も下見、画像送信、API下書き保存、公開前確認、本番公開を分けます。商品状態や価格などを本人が確認し、公開する商品を判断する必要があります。</p>
+<h3>Q. 記事代以外はかかりませんか？</h3>
+<p>A. 選んだAIサービス、表計算ソフト、出品サービス、販売手数料などは別途確認が必要です。利用中の契約で足りるか、新たな契約や従量課金が必要かを、上の費用表に沿って確認してください。</p>
+<p>確認方法：自分が使うPC・アプリ・販路に関する疑問が残っていないか確認します。</p>
+<p>次にやること：以下のチェックリストで準備を整理してください。</p>
+<h2>6｜購入前チェックリスト</h2>
+<p class="check">□ 自分のPCで、選ぶAIアプリを利用できる。</p>
+<p class="check">□ キットを展開し、ローカルフォルダを扱える。</p>
+<p class="check">□ 必要なPythonまたはNode.jsと指定ライブラリを導入できる。</p>
+<p class="check">□ 使う販路のアカウントや設定を本人が用意できる。</p>
+<p class="check">□ AIなどの利用条件と、記事代以外の費用を確認した。</p>
+<p class="check">□ ヤフオク用の.xlsx、またはeBay用のJSONへ商品情報を整理できる。</p>
+<p class="check">□ 商品の検品内容・写真・価格・配送条件を本人が確認する。</p>
+<p class="check">□ Mac向け手順の用意と、Mac実機確認を区別している。</p>
+<p class="check">□ Codexの本人環境での確認と、自分の環境での動作確認を区別している。</p>
+<p class="check">□ 最初はサンプル1商品から試し、外部送信や公開へ進む前に確認する。</p>
+<p>確認方法：まだ確認できていない項目を残し、推測でチェックしません。</p>
+<p>次にやること：購入前に未確認の環境・アカウント・費用を確認してください。</p>
+<h2>公式の確認先</h2>
+<p>AIサービスは、選ぶ1サービスと利用方法に応じて確認します。Codexには無料プランでの利用を含む複数の選択肢があり、利用上限や追加利用の条件が異なります。無料プランでの提供状況は自分のアカウントで確認し、このキットの全手順を無料枠で完了できるとは判断しないでください。Claude Codeもプランでの利用とAPIの従量課金を区別してください。オークタウンには無料・有料プランがあり、件数・画像数・容量などの条件を確認します。</p>
+<p>Codexのプラン・利用条件：<a href="https://learn.chatgpt.com/docs/pricing">https://learn.chatgpt.com/docs/pricing</a></p>
+<p>Codexアプリ：<a href="https://learn.chatgpt.com/docs/app">https://learn.chatgpt.com/docs/app</a></p>
+<p>Claude CodeのPro・Maxプラン利用：<a href="https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan">https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan</a></p>
+<p>Claude Codeデスクトップ：<a href="https://code.claude.com/docs/en/desktop">https://code.claude.com/docs/en/desktop</a></p>
+<p>オークタウンのプラン：<a href="https://auctown.jp/pricing/">https://auctown.jp/pricing/</a></p>
+<p>eBay APIの利用準備：<a href="https://www.developer.ebay.com/develop/guides/sell/get-started-with-ebay-apis">https://www.developer.ebay.com/develop/guides/sell/get-started-with-ebay-apis</a></p>
+<p>ヤフオクの料金案内：<a href="https://auctions.yahoo.co.jp/guide/m/navi/archives/fee.html">https://auctions.yahoo.co.jp/guide/m/navi/archives/fee.html</a></p>
+<p>eBayの販売費用：<a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822">https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822</a></p>
+<p>eBayの費用リンクは米国向けの案内です。出品先・登録国・カテゴリなどにより条件が異なるため、自分に適用される案内を確認してください。</p>
+<p>公式情報の確認日：2026年9月27日。</p></main></body></html>
+
+
